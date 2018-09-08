@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+.header-container{
+    background: #000000;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+.header-container a{
+    margin-right: 63px;
+}
+
+.menu-{
+    display: flex;
+    flex-direction: row;
+  
+    list-style: none;
+    
+    
+
+}
+.logo{
+    margin-left: 2%;
+}
+li{
+    display: flex;
+}
+
+
+.menu- li{
+    
+    margin-top: 10px;
+    text-transform: uppercase;
+    
+}
+.menu- li a{
+    color: #ffffff;
+    cursor: pointer;
+    
+}
+ul{
+    display: flex;
+}
+.menu- li a:hover{
+    opacity: 0.5;
+}
+.trend{
+    text-align: center;
+    margin: 70px 0 80px 0;
+    text-transform: uppercase;
+   
+    
+}
+.border{
+    width: 150px;
+    
+    border-bottom: 2px solid #868686;
+    margin: 0 auto;
+    border-radius: 50px 50px 50px 50px;
+}
+.main-content{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.main-content img{
+    width: 150px;
+    height: 125px;
+    
+    
+}
+.phot{
+    margin-left: 50px;
+}
+.main-content h3{
+    text-align: center;
+}
+.marka{
+    text-align: center;
+    text-transform: uppercase;
+    background: #000000;
+    color: #ffffff;
+}
+.canon{
+    border-bottom: 1px solid #868686;
+    width: 235px;
+    margin-bottom: 50px;
+    
+}
+.about-canon{
+    text-align: center;
+    width: 230px;
+    font-size: 14px; 
+}
+
+.animation{
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 50px;
+    color: #ffffff;
+    position: relative;
+    transition: width .6s .3s;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+.animation i{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    transition: opacity .7s .7s;
+
+}
+.animation::after{
+    content: "See more";
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 0;
+    padding-bottom: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .3s;
+}
+.animation:hover{
+    width: 200px;
+    transition: 0;
+}
+.animation:hover i{
+    transition: opacity .7s;
+    opacity: 0;
+}
+.animation:hover::after{
+    opacity: 1;
+    transition: opacity .7s .7s;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and ( max-width: 420px){
+
+    .header-container{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+  
+.logo{
+    margin: 50px 0 0 20px;
+    
+}
+.logo a:hover{
+    text-shadow: 0px 2px 10px #ffffff; 
+}
+.menu-{
+    display: block;
+    flex-direction: column;
+   
+  
+}
+
+.menu- li{
+    text-align: center;
+    font-size: 12px;
+    display: block;
+}
+.menu- a{
+    display: block;
+    padding: 8px;
+}
+.main-content{
+  
+   flex-direction: column;
+   margin: 0 auto;
+   
+   
+}
+.main-content h3{
+    margin: 0 auto;
+}
+.main-content img{
+    margin-top: 50px;
+    
+}
+.canon{
+    margin: 0 auto;
+    margin-bottom: 50px;
+   
+
+}
+.canon img{
+    margin-left: 45px;
+}
+}
